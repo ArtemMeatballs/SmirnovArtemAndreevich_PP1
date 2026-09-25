@@ -1,0 +1,30 @@
+﻿<Page x:Class="WoodAccountingSystem.Views.AddStorage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WoodAccountingSystem.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddStorage">
+
+    <Grid Background="White">
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBlock Text="Добавление нового склада" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 0 0 30"></TextBlock>
+
+            <TextBlock Text="Вместимость склада (м.куб.):" FontSize="18" HorizontalAlignment="Center"></TextBlock>
+            <TextBox x:Name="TBvolume" Margin="0 15 0 25" Width="410" Height="30" FontSize="19"></TextBox>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Назад" Width="200" Height="45" FontSize="20" Click="Click_btn_back" Margin="0 0 10 0"></Button>
+                <Button Content="Добавить" Width="200" Height="45" FontSize="20" Click="Click_btn_add"></Button>
+            </StackPanel>
+
+            <TextBlock x:Name="TBerror" Foreground="Red" FontSize="16" HorizontalAlignment="Center" Margin="0 20 0 0"></TextBlock>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

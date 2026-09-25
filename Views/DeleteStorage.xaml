@@ -1,0 +1,28 @@
+﻿<Page x:Class="WoodAccountingSystem.Views.DeleteStorage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WoodAccountingSystem.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DeleteStorage">
+
+    <Grid Background="White">
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBlock Text="Удаление склада" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 0 0 30"></TextBlock>
+
+            <TextBlock Text="Номер склада:" FontSize="18" HorizontalAlignment="Center"></TextBlock>
+            <ComboBox x:Name="CBnumber" Width="200" Height="40" FontSize="21" Margin="0 15 0 25"></ComboBox>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Назад" Width="200" Height="45" FontSize="20" Click="Click_btn_back" Margin="0 0 10 0"></Button>
+                <Button Content="Удалить" Width="200" Height="45" FontSize="20" Click="Click_btn_delete"></Button>
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Page>
