@@ -1,3 +1,9 @@
 ﻿* text=auto
-*.sln text eol=crlf
-*.csproj text eol=crfl
+*.cs text eol=lf
+*.xaml text eol=lf
+*.csproj text eol=lf
+*.sln text eol=lf
+*.png binary
+*.jpg binary
+*.dll binary
+*.exe binary

@@ -1,5 +1,9 @@
-﻿bin/
-obj/
+﻿**/bin/
+**/obj/
 .vs/
 packages/
 WoodAccountingSystem.csproj.user
+*.tmp
+*.log
+*.cache
+/WoodAccountingSystem.csproj
